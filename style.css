@@ -1,3 +1,4 @@
+/* article */
 .forecast {
   margin: 0;
   padding: 0.3rem;
@@ -21,6 +22,7 @@
   margin: 0.2rem;
   font-size: 1rem;
 }
+/* aside */
 aside {
   width: 40%;
   padding-left: 0.5rem;
@@ -33,4 +35,84 @@ aside {
 
 aside > p {
   margin: 0.5rem;
+}
+
+/* hgroup */
+
+hgroup {
+  text-align: right;
+  padding-right: 16px;
+  border-right: 10px solid #00c8d7;
+}
+
+hgroup h1 {
+  margin-bottom: 0;
+}
+
+hgroup p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* section */
+h1,
+h2 {
+  margin: 0;
+}
+
+/* blockquote */
+
+div:has(> blockquote) {
+  background-color: #ededed;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+/* 
+El elemento HTML <dd> provee detalles acerca de o la definición 
+de un término precedente (<dt>) en una lista de descripciones (<dl>). */
+p,
+dt {
+  font-weight: bold;
+}
+
+dl,
+dd {
+  font-size: 0.9rem;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+/* figcaption */
+
+figure {
+  border: thin silver solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+img {
+  max-width: 220px;
+  max-height: 150px;
+}
+
+figcaption {
+  background-color: #222222;
+  color: white;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
 }
