@@ -1,4 +1,7 @@
-/* article */
+*{
+  font-size:10px;
+  font-family: arial;
+}/* article */
 .forecast {
   margin: 0;
   padding: 0.3rem;
